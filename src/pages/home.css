@@ -1,0 +1,249 @@
+/* src/styles/global.css */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #0b163f url("../assets/images/image.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+/* .Rectangle2 {
+  width: 1180px;
+  height: 449px;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+} */
+
+/* .upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 5%;
+  gap: 20px;
+  height: 320px;
+} */
+.uploaded-image {
+  width: 499px; /* Fixed width */
+  height: 240px; /* Fixed height */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+.uploading-loader {
+  width: 499px; /* Fixed width */
+  height: 240px; /* Fixed height */
+  display: flex;
+  flex-direction: column; /* Stack loader and text vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center text */
+  background-color: #f9f9f9; /* Optional: background color */
+  border: 1px solid #ccc; /* Optional: border for clarity */
+}
+
+.uploaded-file-img {
+  max-width: 100%; /* Ensure the image does not overflow */
+  max-height: 100%; /* Ensure the image does not overflow */
+  object-fit: contain; /* Scale the image while maintaining its aspect ratio */
+}
+
+.loader {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px; /* Space between loader and text */
+  position: relative; /* Position relative to allow child positioning */
+}
+
+/* .loader:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 8px solid #000;
+    border-right-color: transparent;
+    animation: rotate 1.2s linear infinite;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } */
+
+.upload-box {
+  width: 499px;
+  height: 240px;
+  border: 2px dashed #1c274c;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding: 15px 20px; */
+  /* margin-left: 20px;
+    margin-bottom: 20px; */
+  cursor: pointer;
+}
+
+.upload-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.upload-box p {
+  font-family: "Poppins", sans-serif;
+  color: #666666;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  height: 50px; /* Fixed height to ensure buttons don't shift */
+  margin-top: 10px; /* Space above the button container */
+}
+.upload-button {
+  font-family: "Poppins", sans-serif;
+  background-color: #0b163f;
+  color: #ffffff;
+  border: none;
+  padding: 11px 22px 11px 22px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button.disabled {
+  background-color: #8d8d8d;
+  cursor: not-allowed;
+}
+
+.process-button {
+  font-family: "Poppins", sans-serif;
+  background-color: #8d8d8d;
+  color: #ffffff;
+  border: none;
+  padding: 11px 22px 11px 22px;
+  border-radius: 15px;
+  cursor: not-allowed;
+  transition: background-color 0.3s ease;
+}
+
+.process-button.active {
+  background-color: #0b163f;
+  cursor: pointer;
+}
+
+.upload-button.red {
+  background-color: #8d8d8d; /* Change color to red after upload */
+  cursor: not-allowed; /* Still unclickable */
+}
+
+.back-button {
+  font-family: "Poppins", sans-serif;
+  background-color: #0b163f; /* Change as per your design preference */
+  color: #ffffff;
+  border: none;
+  padding: 11px 22px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 20px; /* Adjust margin as needed */
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #1c274c; /* Change color on hover */
+}
+
+.cheque-details {
+  text-align: left; /* Align text to the left for better readability */
+  color: #000; /* Change color to black for contrast */
+  margin-top: 20px; /* Space above cheque details */
+}
+
+.cheque-status p {
+  margin: 5px 0; /* Space between status items */
+}
+
+h2,
+h3 {
+  margin: 10px 0; /* Space above and below headings */
+}
+.signatures {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.Heading {
+  font-family: "Alegreya Sans Sc", sans-serif;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+}
+
+/* written by david  SEC*/
+/* ////////////////////////// */
+.box {
+  display: flex;
+}
+.Rectangle2 {
+  width: 1180px;
+  height: 540px;
+
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  position: relative;
+  /* margin-top: 5%; */
+  margin-left: 5%;
+  gap: 20px;
+  /* height: 320px; */
+}
+
+.process-img {
+  position: relative;
+}
+.process-img img {
+  position: absolute;
+  top: -94px;
+}
+.btn-div{
+    height: 150px;
+    padding: 4px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 150px;
+    gap: 16px;
+}

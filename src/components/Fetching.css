@@ -1,0 +1,39 @@
+.fetching-loader {
+    position: absolute; /* Use absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    width: 1180px; /* Fixed width */
+    height: 449px; /* Fixed height */
+    border-radius: 15px; /* Rounded corners */
+    background-color: #FFFFFF; /* Background color */
+    padding: 20px; /* Padding inside the box */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: shadow for depth */
+    z-index: 1000; /* Make sure it appears on top of other content */
+}
+
+
+.fetching-loader{
+    
+        width: 1180px;
+        height: 449px;
+        margin: 0 auto;
+        border-radius: 15px;
+        background-color: #FFFFFF;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    
+}
+
+.fetching-buttons {
+    margin-top: 20px; /* Space between loader and buttons */
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
